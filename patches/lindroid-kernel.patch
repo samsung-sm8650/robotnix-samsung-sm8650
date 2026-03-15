@@ -1,0 +1,57 @@
+diff --git a/arch/arm64/configs/oem/e3q_defconfig b/arch/arm64/configs/oem/e3q_defconfig
+index 32d5179b4046..c26c03840c28 100644
+--- a/arch/arm64/configs/oem/e3q_defconfig
++++ b/arch/arm64/configs/oem/e3q_defconfig
+@@ -1420,3 +1420,14 @@ CONFIG_SENSORS_LAF_FAILURE_DEBUG=y
+ CONFIG_HV_MUIC_MAX77775_AFC=y
+ CONFIG_MUIC_MAX77775=y
+ CONFIG_MFD_S2MPB02=m
++
++CONFIG_SYSVIPC=y
++CONFIG_UTS_NS=y
++CONFIG_PID_NS=y
++CONFIG_IPC_NS=y
++CONFIG_USER_NS=y
++CONFIG_NET_NS=y
++CONFIG_CGROUP_DEVICE=y
++CONFIG_CGROUP_FREEZER=y
++CONFIG_DRM_LINDROID_EVDI=y
++CONFIG_TMPFS_POSIX_ACL=y
+diff --git a/drivers/Kconfig b/drivers/Kconfig
+index 96192bf7ba3c..f5bd983b8463 100644
+--- a/drivers/Kconfig
++++ b/drivers/Kconfig
+@@ -289,4 +289,7 @@ source "drivers/input/sec_input/synaptics/Kconfig" # ADDED BY LEGO AUTOMATICALLY
+ source "drivers/battery/common/Kconfig" # ADDED BY LEGO AUTOMATICALLY: DO NOT SUBMIT
+ source "drivers/sensors/vl53l8/Kconfig" # ADDED BY LEGO AUTOMATICALLY: DO NOT SUBMIT
+ source "drivers/mfd/slsi/s2mpb02/Kconfig" # ADDED BY LEGO AUTOMATICALLY: DO NOT SUBMIT
++
++# Lindroid
++source "drivers/lindroid-drm/Kconfig"
+ endmenu
+diff --git a/drivers/Makefile b/drivers/Makefile
+index 5523a7ab3a27..430f95796948 100644
+--- a/drivers/Makefile
++++ b/drivers/Makefile
+@@ -235,3 +235,6 @@ obj-y				+= uwb/uwb_logger/
+ obj-y				+= vibrator/common/inputff/
+ obj-y				+= vibrator/common/vib_info/
+ obj-y				+= vibrator/cs/cs40l26/
++
++# Lindroid
++obj-y += lindroid-drm/
+diff --git a/fs/overlayfs/util.c b/fs/overlayfs/util.c
+index 283dd0e31f50..9ca63f638ece 100644
+--- a/fs/overlayfs/util.c
++++ b/fs/overlayfs/util.c
+@@ -148,9 +148,7 @@ bool ovl_dentry_weird(struct dentry *dentry)
+ 		return true;
+ 
+ 	return dentry->d_flags & (DCACHE_NEED_AUTOMOUNT |
+-				  DCACHE_MANAGE_TRANSIT |
+-				  DCACHE_OP_HASH |
+-				  DCACHE_OP_COMPARE);
++				  DCACHE_MANAGE_TRANSIT);
+ }
+ 
+ enum ovl_path_type ovl_path_type(struct dentry *dentry)

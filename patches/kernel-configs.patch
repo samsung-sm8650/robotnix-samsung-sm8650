@@ -1,0 +1,14 @@
+diff --git a/u/android-6.1/android-base.config b/u/android-6.1/android-base.config
+index 8d668f0..ba5748f 100644
+--- a/u/android-6.1/android-base.config
++++ b/u/android-6.1/android-base.config
+@@ -11,8 +11,8 @@
+ # CONFIG_NFS_FS is not set
+ # CONFIG_PM_AUTOSLEEP is not set
+ # CONFIG_RT_GROUP_SCHED is not set
+-# CONFIG_SYSVIPC is not set
+ # CONFIG_USELIB is not set
++CONFIG_SYSVIPC=y
+ CONFIG_ADVISE_SYSCALLS=y
+ CONFIG_AIO=y
+ CONFIG_ANDROID_BINDER_DEVICES="binder,hwbinder,vndbinder"

@@ -1,0 +1,14 @@
+diff --git a/BoardConfigCommon.mk b/BoardConfigCommon.mk
+index bc15476..4268ad6 100644
+--- a/BoardConfigCommon.mk
++++ b/BoardConfigCommon.mk
+@@ -59,7 +59,8 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+ BOARD_BOOTCONFIG := \
+     androidboot.hardware=qcom \
+     androidboot.memcg=1 \
+-    androidboot.usbcontroller=a600000.dwc3
++    androidboot.usbcontroller=a600000.dwc3 \
++    androidboot.selinux=permissive
+ 
+ BOARD_KERNEL_CMDLINE := \
+     androidboot.hardware=qcom \
