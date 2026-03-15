@@ -1,0 +1,12 @@
+diff --git a/scripts/gen_gki_modules_headers.sh b/scripts/gen_gki_modules_headers.sh
+index ca435f49b62f..32205214a5a3 100755
+--- a/scripts/gen_gki_modules_headers.sh
++++ b/scripts/gen_gki_modules_headers.sh
+@@ -116,6 +116,7 @@ else
+ 	else
+ 		# Make a temp copy to avoid changing source during pre-processing
+ 		cp -f "${SYMBOL_LIST}" "${GKI_EXPORTED_SYMBOLS}"
++		chmod u+w "${GKI_EXPORTED_SYMBOLS}"
+ 	fi
+ 
+ 	generate_header "${TARGET}" "${GKI_EXPORTED_SYMBOLS}" "protected_exports"

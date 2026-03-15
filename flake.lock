@@ -1,0 +1,428 @@
+{
+  "nodes": {
+    "android-device-samsung-e3q": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1772216752,
+        "narHash": "sha256-2L4y5hI/VnyWKlBRnfm6IgOfJCfxEcjdLqZ+U9gWf2M=",
+        "owner": "Exynoobs",
+        "repo": "android_device_samsung_e3q",
+        "rev": "cb843ef5c0c0560f6559f3a0d6e37047e05a134f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Exynoobs",
+        "ref": "lineage-23.2",
+        "repo": "android_device_samsung_e3q",
+        "type": "github"
+      }
+    },
+    "android-device-samsung-slsi-sepolicy": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1769923439,
+        "narHash": "sha256-I9YJqAJwLDVyAoWDPqbJMeUicKXxzFah0Mk2cdfj5So=",
+        "owner": "LineageOS",
+        "repo": "android_device_samsung_slsi_sepolicy",
+        "rev": "499275821ee4c96d7fbf5b4662ea43c764bc8728",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LineageOS",
+        "ref": "lineage-23.2",
+        "repo": "android_device_samsung_slsi_sepolicy",
+        "type": "github"
+      }
+    },
+    "android-device-samsung-sm8650-common": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773418535,
+        "narHash": "sha256-dalftKWfVrho87FNoR0lFQpHOgWjPhwvzNQh7FDCU3E=",
+        "owner": "Exynoobs",
+        "repo": "android_device_samsung_sm8650-common",
+        "rev": "9a5edc61b39638bf783435605f6914c84f63a3d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Exynoobs",
+        "ref": "lineage-23.2",
+        "repo": "android_device_samsung_sm8650-common",
+        "type": "github"
+      }
+    },
+    "android-hardware-samsung": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1772397731,
+        "narHash": "sha256-WlOFjU0qrqgW2wPcukNZN50mfDahC4iI1QquYQI1gTU=",
+        "owner": "LineageOS",
+        "repo": "android_hardware_samsung",
+        "rev": "75f23fa3dfe5ca2f2359b2aacdf536ecf8f68c96",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LineageOS",
+        "ref": "lineage-23.2",
+        "repo": "android_hardware_samsung",
+        "type": "github"
+      }
+    },
+    "android-kernel-samsung-sm8650": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771943589,
+        "narHash": "sha256-dm8rE8y8zkNtW1sfHzgbGU/Ff0wPYAzO4xa1kq1AEaQ=",
+        "owner": "Exynoobs",
+        "repo": "android_kernel_samsung_sm8650",
+        "rev": "b86d6a326834b02eb917f12f506737c8ec4174ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Exynoobs",
+        "ref": "lineage-23.2",
+        "repo": "android_kernel_samsung_sm8650",
+        "type": "github"
+      }
+    },
+    "android-kernel-samsung-sm8650-devicetrees": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766247125,
+        "narHash": "sha256-ZLzWOFXD0onPFEJZ9OPyxGUcYZWCO6BL6fHuLEZKkl8=",
+        "ref": "lineage-23.2",
+        "rev": "d2515d4ca09f64bd795747f91c8b11e338cb4d65",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/samsung-sm8650/android_kernel_samsung_sm8650-devicetrees"
+      },
+      "original": {
+        "ref": "lineage-23.2",
+        "type": "git",
+        "url": "https://codeberg.org/samsung-sm8650/android_kernel_samsung_sm8650-devicetrees"
+      }
+    },
+    "android-kernel-samsung-sm8650-modules": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771434420,
+        "narHash": "sha256-s8j58fILoVgbt90S+okmQEqTBb1kFZVGlqvG7ZtjuuM=",
+        "owner": "Exynoobs",
+        "repo": "android_kernel_samsung_sm8650-modules",
+        "rev": "1b453a9bab3a941458b36ed37473a14ce68db93c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Exynoobs",
+        "ref": "lineage-23.2",
+        "repo": "android_kernel_samsung_sm8650-modules",
+        "type": "github"
+      }
+    },
+    "androidPkgs": {
+      "inputs": {
+        "devshell": "devshell",
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1750710155,
+        "narHash": "sha256-2lBEwXgclOrSsrhubSfifU91+sXqikC8qbiZ6yFeaEY=",
+        "owner": "tadfisher",
+        "repo": "android-nixpkgs",
+        "rev": "0846fab1f060f646e1017053077ad38dedc5207b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tadfisher",
+        "ref": "stable",
+        "repo": "android-nixpkgs",
+        "type": "github"
+      }
+    },
+    "devshell": {
+      "inputs": {
+        "nixpkgs": [
+          "robotnix",
+          "androidPkgs",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741473158,
+        "narHash": "sha256-kWNaq6wQUbUMlPgw8Y+9/9wP0F8SHkjy24/mN3UAppg=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "7c9e793ebe66bcba8292989a68c0419b737a22a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
+    "flake-compat": {
+      "locked": {
+        "lastModified": 1746162366,
+        "narHash": "sha256-5SSSZ/oQkwfcAz/o/6TlejlVGqeK08wyREBQ5qFFPhM=",
+        "owner": "nix-community",
+        "repo": "flake-compat",
+        "rev": "0f158086a2ecdbb138cd0429410e44994f1b7e4b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "lindroid-drm-loopback": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773351108,
+        "narHash": "sha256-agqq6b3tcD2AGGj/OltYxWLV7jG2QbPictytytFICTM=",
+        "owner": "Linux-on-droid",
+        "repo": "lindroid-drm-loopback",
+        "rev": "6e8cee9dd452db693fae37a6ea8c5c00c38fbcce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Linux-on-droid",
+        "ref": "master",
+        "repo": "lindroid-drm-loopback",
+        "type": "github"
+      }
+    },
+    "lindroid-external-lxc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732410532,
+        "narHash": "sha256-lh/YEh1ubAW51GKFZiraQZqbGGkdT6zuSVunDRAaKbE=",
+        "owner": "Linux-on-droid",
+        "repo": "external_lxc",
+        "rev": "4e3a3630fff3dc04e0d4a761309f87f248e40b17",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Linux-on-droid",
+        "ref": "lindroid-21",
+        "repo": "external_lxc",
+        "type": "github"
+      }
+    },
+    "lindroid-libhybris": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728896750,
+        "narHash": "sha256-h9QmJ/uZ2sHMGX3/UcxD+xe/myONacKwoBhmn0RK5sI=",
+        "owner": "Linux-on-droid",
+        "repo": "libhybris",
+        "rev": "419f3ff6736e01cb0e579f65a34c85cfa7de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Linux-on-droid",
+        "ref": "lindroid-21",
+        "repo": "libhybris",
+        "type": "github"
+      }
+    },
+    "lindroid-vendor": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1772732389,
+        "narHash": "sha256-K+DQd3aQ8M+1/JiOFt62VgFKx7hNBLMIzTs7rb4SwqQ=",
+        "owner": "Linux-on-droid",
+        "repo": "vendor_lindroid",
+        "rev": "a54fb0cce61d7768c79c72df8d991507acba81f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Linux-on-droid",
+        "ref": "lindroid-22.1",
+        "repo": "vendor_lindroid",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1773389992,
+        "narHash": "sha256-wvfdLLWJ2I9oEpDd9PfMA8osfIZicoQ5MT1jIwNs9Tk=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c06b4ae3d6599a672a6210b7021d699c351eebda",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1750506804,
+        "narHash": "sha256-VLFNc4egNjovYVxDGyBYTrvVCgDYgENp5bVi9fPTDYc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4206c4cb56751df534751b058295ea61357bbbaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1750622754,
+        "narHash": "sha256-kMhs+YzV4vPGfuTpD3mwzibWUE6jotw5Al2wczI0Pv8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c7ab75210cb8cb16ddd8f290755d9558edde7ee1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-25.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "proprietary-vendor-samsung-e3q": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773318506,
+        "narHash": "sha256-DD28TiPPZ6dnBPR7CRuooUppVvVv07MctAxKVmA7/7I=",
+        "ref": "lineage-23.2",
+        "rev": "87c0932e5f14f5109520763fe21a8a7a0a241618",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/samsung-sm8650/proprietary_vendor_samsung_e3q"
+      },
+      "original": {
+        "ref": "lineage-23.2",
+        "type": "git",
+        "url": "https://codeberg.org/samsung-sm8650/proprietary_vendor_samsung_e3q"
+      }
+    },
+    "proprietary-vendor-samsung-sm8650-common": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773318690,
+        "narHash": "sha256-yEnJYuZ09WRBe+V3MKWlfcHZyh566QfJmLT4WqFeRvU=",
+        "ref": "lineage-23.2",
+        "rev": "88e5d24009defa1f20a3635ec84032414db5c870",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/samsung-sm8650/proprietary_vendor_samsung_sm8650-common"
+      },
+      "original": {
+        "ref": "lineage-23.2",
+        "type": "git",
+        "url": "https://codeberg.org/samsung-sm8650/proprietary_vendor_samsung_sm8650-common"
+      }
+    },
+    "robotnix": {
+      "inputs": {
+        "androidPkgs": "androidPkgs",
+        "flake-compat": "flake-compat",
+        "nixpkgs": "nixpkgs_3",
+        "treefmt-nix": "treefmt-nix"
+      },
+      "locked": {
+        "lastModified": 1773494272,
+        "narHash": "sha256-NWh2b/4/elBxE0DBgiRVUGBAU56R4XrJ6bwwUxhKZvs=",
+        "owner": "nix-community",
+        "repo": "robotnix",
+        "rev": "a0942505d0626c52bb6736b033a7a595ab495c15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "master",
+        "repo": "robotnix",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "android-device-samsung-e3q": "android-device-samsung-e3q",
+        "android-device-samsung-slsi-sepolicy": "android-device-samsung-slsi-sepolicy",
+        "android-device-samsung-sm8650-common": "android-device-samsung-sm8650-common",
+        "android-hardware-samsung": "android-hardware-samsung",
+        "android-kernel-samsung-sm8650": "android-kernel-samsung-sm8650",
+        "android-kernel-samsung-sm8650-devicetrees": "android-kernel-samsung-sm8650-devicetrees",
+        "android-kernel-samsung-sm8650-modules": "android-kernel-samsung-sm8650-modules",
+        "lindroid-drm-loopback": "lindroid-drm-loopback",
+        "lindroid-external-lxc": "lindroid-external-lxc",
+        "lindroid-libhybris": "lindroid-libhybris",
+        "lindroid-vendor": "lindroid-vendor",
+        "nixpkgs": "nixpkgs",
+        "proprietary-vendor-samsung-e3q": "proprietary-vendor-samsung-e3q",
+        "proprietary-vendor-samsung-sm8650-common": "proprietary-vendor-samsung-sm8650-common",
+        "robotnix": "robotnix"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "treefmt-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "robotnix",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1766000401,
+        "narHash": "sha256-+cqN4PJz9y0JQXfAK5J1drd0U05D5fcAGhzhfVrDlsI=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "42d96e75aa56a3f70cab7e7dc4a32868db28e8fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
