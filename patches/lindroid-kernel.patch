@@ -3,9 +3,9 @@ index 32d5179b4046..c26c03840c28 100644
 --- a/arch/arm64/configs/oem/e3q_defconfig
 +++ b/arch/arm64/configs/oem/e3q_defconfig
 @@ -1420,3 +1420,14 @@ CONFIG_SENSORS_LAF_FAILURE_DEBUG=y
- CONFIG_HV_MUIC_MAX77775_AFC=y
  CONFIG_MUIC_MAX77775=y
  CONFIG_MFD_S2MPB02=m
+ CONFIG_CRYPTO_SHA1=y
 +
 +CONFIG_SYSVIPC=y
 +CONFIG_UTS_NS=y
