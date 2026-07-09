@@ -3,8 +3,9 @@ inputs: {
   flavor = "lineageos";
   flavorVersion = "23.2";
 
-  apps.fdroid.enable = true;
-  microg.enable = true;
+  envVars = {
+    WITH_GMS = "true";
+  };
 
   source.dirs = {
     "device/samsung/e3q".src = inputs.android-device-samsung-e3q;
@@ -37,6 +38,7 @@ inputs: {
     "vendor/extra".src = ./vendor-extra;
     "frameworks/base".patches = [ ./patches/ignore-uevents-with-null-name.patch ];
     "kernel/configs".patches = [ ./patches/kernel-configs.patch ];
+    "vendor/partner_gms".src = inputs.android-vendor-partner-gms;
   };
 
   stateVersion = "3";

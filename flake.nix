@@ -60,6 +60,12 @@
       url = "github:Linux-on-droid/vendor_lindroid/lindroid-22.1";
       flake = false;
     };
+
+    # microG
+    android-vendor-partner-gms = {
+      url = "git+https://gitlab.com/itsvixano-dev/android/lineageos-personal/android_vendor_partner_gms.git?ref=main";
+      flake = false;
+    };
   };
   outputs =
     {

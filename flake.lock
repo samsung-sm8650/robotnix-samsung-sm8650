@@ -119,6 +119,23 @@
         "type": "github"
       }
     },
+    "android-vendor-partner-gms": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1783524220,
+        "narHash": "sha256-wV48KyyCWHSHbXNc0vNH79MbxIK7+aMkOqmeGAtuUHI=",
+        "ref": "main",
+        "rev": "7d908d421aa853bde0e005d9294d0007b6924cb1",
+        "revCount": 217,
+        "type": "git",
+        "url": "https://gitlab.com/itsvixano-dev/android/lineageos-personal/android_vendor_partner_gms.git"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "https://gitlab.com/itsvixano-dev/android/lineageos-personal/android_vendor_partner_gms.git"
+      }
+    },
     "androidPkgs": {
       "inputs": {
         "devshell": "devshell",
@@ -393,6 +410,7 @@
         "android-kernel-samsung-sm8650": "android-kernel-samsung-sm8650",
         "android-kernel-samsung-sm8650-devicetrees": "android-kernel-samsung-sm8650-devicetrees",
         "android-kernel-samsung-sm8650-modules": "android-kernel-samsung-sm8650-modules",
+        "android-vendor-partner-gms": "android-vendor-partner-gms",
         "lindroid-drm-loopback": "lindroid-drm-loopback",
         "lindroid-external-lxc": "lindroid-external-lxc",
         "lindroid-libhybris": "lindroid-libhybris",
