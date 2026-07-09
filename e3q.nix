@@ -36,7 +36,10 @@ inputs: {
     };
     "kernel/samsung/sm8650/drivers/lindroid-drm".src = inputs.lindroid-drm-loopback;
     "vendor/extra".src = ./vendor-extra;
-    "frameworks/base".patches = [ ./patches/ignore-uevents-with-null-name.patch ];
+    "frameworks/base".patches = [
+      ./patches/ignore-uevents-with-null-name.patch
+      ./patches/0005-Disable-screenshot-restrictions-and-audio-capture-blocking.patch
+    ];
     "kernel/configs".patches = [ ./patches/kernel-configs.patch ];
     "vendor/partner_gms".src = inputs.android-vendor-partner-gms;
   };
