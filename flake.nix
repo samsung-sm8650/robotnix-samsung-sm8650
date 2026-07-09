@@ -1,7 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    robotnix.url = "github:nix-community/robotnix/master";
+    robotnix.url = "github:ungeskriptet/robotnix/lineage-update";
 
     # Samsung Galaxy S24 Ultra sources
     android-device-samsung-e3q = {
