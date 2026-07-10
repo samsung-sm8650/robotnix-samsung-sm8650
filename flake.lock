@@ -105,15 +105,15 @@
     "android-kernel-samsung-sm8650-modules": {
       "flake": false,
       "locked": {
-        "lastModified": 1779357176,
-        "narHash": "sha256-Ly1z5/ELhBzEqstng1MnMluELv+RneXRbUF1kwMFK80=",
-        "owner": "Exynoobs",
+        "lastModified": 1783702136,
+        "narHash": "sha256-IHy/es0gL0URD9lCr1WvxTtxZTq2OpmHdfggtQl7p6Q=",
+        "owner": "samsung-sm8650",
         "repo": "android_kernel_samsung_sm8650-modules",
-        "rev": "03077061a5325c875a7ad48d4cf785a4969d5dd4",
+        "rev": "e08099ed6388a60a3a030e0cdb0c69eacb325893",
         "type": "github"
       },
       "original": {
-        "owner": "Exynoobs",
+        "owner": "samsung-sm8650",
         "ref": "lineage-23.2",
         "repo": "android_kernel_samsung_sm8650-modules",
         "type": "github"

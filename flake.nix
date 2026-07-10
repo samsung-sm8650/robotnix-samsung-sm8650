@@ -17,7 +17,7 @@
       flake = false;
     };
     android-kernel-samsung-sm8650-modules = {
-      url = "github:Exynoobs/android_kernel_samsung_sm8650-modules/lineage-23.2";
+      url = "github:samsung-sm8650/android_kernel_samsung_sm8650-modules/lineage-23.2";
       flake = false;
     };
     android-kernel-samsung-sm8650-devicetrees = {
