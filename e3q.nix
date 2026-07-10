@@ -1,8 +1,9 @@
-inputs: {
+inputs: { pkgs, ... }: {
   device = "e3q";
   flavor = "lineageos";
   flavorVersion = "23.2";
 
+  envPackages = with pkgs; [ xxd ];
   envVars = {
     WITH_GMS = "true";
   };
