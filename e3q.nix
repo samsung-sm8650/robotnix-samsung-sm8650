@@ -10,10 +10,7 @@ inputs: { pkgs, ... }: {
 
   source.dirs = {
     "device/samsung/e3q".src = inputs.android-device-samsung-e3q;
-    "device/samsung/sm8650-common" = {
-      src = inputs.android-device-samsung-sm8650-common;
-      patches = [ ./patches/permissive-selinux.patch ];
-    };
+    "device/samsung/sm8650-common".src = inputs.android-device-samsung-sm8650-common;
     "hardware/samsung".src = inputs.android-hardware-samsung;
     "kernel/samsung/sm8650-devicetrees".src = inputs.android-kernel-samsung-sm8650-devicetrees;
     "kernel/samsung/sm8650-modules" = {
