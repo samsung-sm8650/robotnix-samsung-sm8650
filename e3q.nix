@@ -13,10 +13,7 @@ inputs: { pkgs, ... }: {
     "device/samsung/sm8650-common".src = inputs.android-device-samsung-sm8650-common;
     "hardware/samsung".src = inputs.android-hardware-samsung;
     "kernel/samsung/sm8650-devicetrees".src = inputs.android-kernel-samsung-sm8650-devicetrees;
-    "kernel/samsung/sm8650-modules" = {
-      src = inputs.android-kernel-samsung-sm8650-modules;
-      postPatch = "chmod -R a=rwX *";
-    };
+    "kernel/samsung/sm8650-modules".src = inputs.android-kernel-samsung-sm8650-modules;
     "kernel/samsung/sm8650" = {
       src = inputs.android-kernel-samsung-sm8650;
       patches = [
