@@ -42,6 +42,8 @@ inputs: { pkgs, ... }: {
       ./patches/0005-Disable-screenshot-restrictions-and-audio-capture-blocking.patch
     ];
     "kernel/configs".patches = [ ./patches/kernel-configs.patch ];
+
+    # microG
     "vendor/partner_gms".src = inputs.android-vendor-partner-gms;
   };
 
