@@ -24,8 +24,6 @@ inputs: { pkgs, ... }: {
     };
     "vendor/samsung/e3q".src = inputs.proprietary-vendor-samsung-e3q;
     "vendor/samsung/sm8650-common".src = inputs.proprietary-vendor-samsung-sm8650-common;
-
-    # Lindroid
     "libhybris".src = inputs.lindroid-libhybris;
     "external/lxc".src = inputs.lindroid-external-lxc;
     "vendor/lindroid" = {
@@ -33,15 +31,34 @@ inputs: { pkgs, ... }: {
       patches = [ ./patches/lindroid-vendor.patch ];
     };
     "kernel/samsung/sm8650/drivers/lindroid-drm".src = inputs.lindroid-drm-loopback;
-    "vendor/extra".src = ./vendor-extra;
+    "vendor/extra".src = inputs.android-vendor-extra;
     "frameworks/base".patches = [
       ./patches/ignore-uevents-with-null-name.patch
+      ./patches/0001-fwb-Screen-off-animations-1-2.patch
+      ./patches/0002-Fix-crash-with-protected-content-with-ElectronBeam-S.patch
       ./patches/0005-Disable-screenshot-restrictions-and-audio-capture-blocking.patch
+      ./patches/0025-Set-FakeStore-PlayStore-as-Aurora-Store-installer-pa.patch
+
     ];
     "kernel/configs".patches = [ ./patches/kernel-configs.patch ];
-
-    # microG
     "vendor/partner_gms".src = inputs.android-vendor-partner-gms;
+    "vendor/lineage/imsstack-carrier-config-ext".src = inputs.imsstack-carrier-config-ext;
+    "packages/modules/ImsMedia".src = inputs.imsmedia;
+    "packages/modules/ImsStack".src = inputs.imsstack;
+    "packages/apps/Updater".patches = [
+      ./patches/0001-Updater-remove-battery-level-check.patch
+    ];
+    "packages/modules/Bluetooth".patches = [
+      ./patches/0001-Bluetooth-Add-REQUEST_INSTALL_PACKAGES-permission-to.patch
+      ./patches/0002-Bluetooth-Allow-sending-any-file-via-Bluetooth.patch
+    ];
+    "packages/apps/Bellis" = {
+      src = inputs.bellis;
+      patches = [
+        ./patches/0001-app-Update-systemApps-to-match-LineageOS.patch
+        ./patches/0001-app-Make-Aurora-Store-and-F-Droid-available-in-work-.patch
+      ];
+    };
   };
 
   stateVersion = "3";
