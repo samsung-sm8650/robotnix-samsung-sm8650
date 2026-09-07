@@ -20,11 +20,11 @@
     "android-device-samsung-slsi-sepolicy": {
       "flake": false,
       "locked": {
-        "lastModified": 1783596865,
-        "narHash": "sha256-06O4nEwxMjOyeH5EKKrYClSxgyhrP+sbYVb4Ogz30f4=",
+        "lastModified": 1788785703,
+        "narHash": "sha256-fQkmhl+4g2LYAGiXy8XTPdp9G11qG/BbFMj6ZQ9CRGM=",
         "owner": "LineageOS",
         "repo": "android_device_samsung_slsi_sepolicy",
-        "rev": "ce8096704e3adff6df7c12cc42518f9e244b3cf4",
+        "rev": "8ff62b4b9876dec8039f108a2a55e5decb8938b0",
         "type": "github"
       },
       "original": {
@@ -122,11 +122,11 @@
     "android-vendor-extra": {
       "flake": false,
       "locked": {
-        "lastModified": 1787767373,
-        "narHash": "sha256-OSvVU20ZlAn7Ksfowub40goEBYL7oGV/eaercgOs3jc=",
-        "rev": "c29d4ba17944c29ad1de6aae75b60cd5a10f9c8f",
+        "lastModified": 1788809849,
+        "narHash": "sha256-rAk+VzFtxjQ5cegsc5ZbSGffZoB5F1vXip3CzZGOfK0=",
+        "rev": "d5849ee76bc6aa70bb9c0d6a5fa7c917a789c537",
         "type": "tarball",
-        "url": "https://codeberg.org/api/v1/repos/ungeskriptet/android_vendor_extra/archive/c29d4ba17944c29ad1de6aae75b60cd5a10f9c8f.tar.gz"
+        "url": "https://codeberg.org/api/v1/repos/ungeskriptet/android_vendor_extra/archive/d5849ee76bc6aa70bb9c0d6a5fa7c917a789c537.tar.gz"
       },
       "original": {
         "type": "tarball",
@@ -246,11 +246,11 @@
     "imsmedia": {
       "flake": false,
       "locked": {
-        "lastModified": 1785365077,
-        "narHash": "sha256-ZzG1Lw32F/zXJoXub8ejYPfUSgP9SxTH0WOwJW7jFM8=",
+        "lastModified": 1788706276,
+        "narHash": "sha256-89/lFHbpL97y2tHzmotLTGPyTDBc/ND2khYkZVNayqg=",
         "owner": "krazey",
         "repo": "ImsMedia",
-        "rev": "a8f065b6c315ee7b745bba08ddb545b5d2c301df",
+        "rev": "9ff3dc1bfe261abcc30dc4c22bc1680bfce50726",
         "type": "github"
       },
       "original": {
@@ -263,11 +263,11 @@
     "imsstack": {
       "flake": false,
       "locked": {
-        "lastModified": 1787837539,
-        "narHash": "sha256-SRkq04Kgy01IhK7FyuUvZ67ef6Nbdb1vhC7GT1Iqyjg=",
+        "lastModified": 1788782069,
+        "narHash": "sha256-UqoCODW49IuJWEQoO+hxvM1ilP4KYw7BPdprcteKZEA=",
         "owner": "krazey",
         "repo": "ImsStack",
-        "rev": "f64d9c54b7f29358cdc5e27f096297c49b97da87",
+        "rev": "1a4b66bfee39f5aa0ac93a30f4e1671651419b0b",
         "type": "github"
       },
       "original": {
@@ -280,11 +280,11 @@
     "imsstack-carrier-config-ext": {
       "flake": false,
       "locked": {
-        "lastModified": 1787831101,
-        "narHash": "sha256-2wavQOXDDD+1sK55149BNwYW9m4vGxRwtfZUgiD4w2o=",
+        "lastModified": 1788706243,
+        "narHash": "sha256-GQU6ghBkeex+TJjuMuUmN2GcslSMlQ29Gq86uj9g1mw=",
         "owner": "krazey",
         "repo": "imsstack-carrier-config-ext",
-        "rev": "d714099c0d058a07a4df31d2ab373421557b0e64",
+        "rev": "92d0e9080e78f72ccccc08f0db888d13a422bb1c",
         "type": "github"
       },
       "original": {
@@ -364,11 +364,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1787498568,
-        "narHash": "sha256-9i/VTdusq/+NM/tz+J1Re+ojkMB8MBf0QshnYfzHz30=",
+        "lastModified": 1788752844,
+        "narHash": "sha256-VaWGJ6+cIYN2erfSecbRV+4ljI185Ty2wUrXyvQbgOw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "56c02bc00adcf003215cc4bd996d6efaf4cff188",
+        "rev": "dc5d91f840324650bac8c379428c7037a416959a",
         "type": "github"
       },
       "original": {
