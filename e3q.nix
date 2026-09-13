@@ -26,11 +26,10 @@ inputs: { pkgs, ... }: {
     "vendor/samsung/sm8650-common".src = inputs.proprietary-vendor-samsung-sm8650-common;
     "libhybris".src = inputs.lindroid-libhybris;
     "external/lxc".src = inputs.lindroid-external-lxc;
-    "vendor/lindroid" = {
-      src = inputs.lindroid-vendor;
-      patches = [ ./patches/lindroid-vendor.patch ];
-    };
-    "kernel/samsung/sm8650/drivers/lindroid-drm".src = inputs.lindroid-drm-loopback;
+    "vendor/lindroid".src = inputs.lindroid-vendor;
+    "kernel/samsung/sm8650/drivers/lindroid-drm".src = pkgs.runCommand "lindroid-drm-src" { } ''
+      cp -r ${inputs.lindroid-drm-loopback}/drivers/lindroid-drm-loopback $out
+    '';
     "vendor/extra".src = inputs.android-vendor-extra;
     "frameworks/base".patches = [
       ./patches/ignore-uevents-with-null-name.patch
@@ -59,6 +58,9 @@ inputs: { pkgs, ... }: {
         ./patches/0001-app-Make-Aurora-Store-and-F-Droid-available-in-work-.patch
       ];
     };
+    "system/sepolicy".patches = [
+      ./patches/0001-private-domain-add-new-attr-for-relaxing-a-dir-init-.patch
+    ];
   };
 
   stateVersion = "3";

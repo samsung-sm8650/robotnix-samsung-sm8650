@@ -297,33 +297,33 @@
     "lindroid-drm-loopback": {
       "flake": false,
       "locked": {
-        "lastModified": 1782329076,
-        "narHash": "sha256-mEJ3LY4lNoWLaFz9ANfRAzZpOaTJnkbZwBR0Oe1pyyg=",
-        "owner": "Linux-on-droid",
-        "repo": "lindroid-drm-loopback",
-        "rev": "d3b85f3251beae4bc8481538f37d13b7f30abde0",
+        "lastModified": 1785851710,
+        "narHash": "sha256-zgFigD1uzGS0350Ff5K+NqQD8k3//9/EdQ1fSzFpFEw=",
+        "owner": "yaap",
+        "repo": "kernel_oneplus_sm8650",
+        "rev": "834d47f82b3035a42eb859a955e25b33f33c82ef",
         "type": "github"
       },
       "original": {
-        "owner": "Linux-on-droid",
-        "ref": "master",
-        "repo": "lindroid-drm-loopback",
+        "owner": "yaap",
+        "ref": "sixteen",
+        "repo": "kernel_oneplus_sm8650",
         "type": "github"
       }
     },
     "lindroid-external-lxc": {
       "flake": false,
       "locked": {
-        "lastModified": 1732410532,
-        "narHash": "sha256-lh/YEh1ubAW51GKFZiraQZqbGGkdT6zuSVunDRAaKbE=",
-        "owner": "Linux-on-droid",
+        "lastModified": 1754661935,
+        "narHash": "sha256-Bh26+aoIJXgfaXfwOmQMagBNZFc8RGOExE+0/qU3Oxg=",
+        "owner": "yaap",
         "repo": "external_lxc",
-        "rev": "4e3a3630fff3dc04e0d4a761309f87f248e40b17",
+        "rev": "735d0864825851b4c8995b71e89fac8f408fb700",
         "type": "github"
       },
       "original": {
-        "owner": "Linux-on-droid",
-        "ref": "lindroid-21",
+        "owner": "yaap",
+        "ref": "sixteen",
         "repo": "external_lxc",
         "type": "github"
       }
@@ -331,16 +331,16 @@
     "lindroid-libhybris": {
       "flake": false,
       "locked": {
-        "lastModified": 1780085779,
-        "narHash": "sha256-5Ji9R1M0PKNWb8mQyMESQAI2qRli2GMIIMMVDsjZ7NE=",
-        "owner": "Linux-on-droid",
+        "lastModified": 1782142696,
+        "narHash": "sha256-Oizx5WHRWUX4/uq6r/cttxV12Kyws9rLRXTdItd79l4=",
+        "owner": "yaap",
         "repo": "libhybris",
-        "rev": "29e0fa6da0166261f6b9437582fe2d56bab8530c",
+        "rev": "3b182e5662850870a4b619005655422b0d030898",
         "type": "github"
       },
       "original": {
-        "owner": "Linux-on-droid",
-        "ref": "lindroid-21",
+        "owner": "yaap",
+        "ref": "sixteen",
         "repo": "libhybris",
         "type": "github"
       }
@@ -348,16 +348,16 @@
     "lindroid-vendor": {
       "flake": false,
       "locked": {
-        "lastModified": 1783009062,
-        "narHash": "sha256-hCzokst8gNIODntQgVIBbB/X7R9Rud71BdEIlyOEk3k=",
-        "owner": "Linux-on-droid",
+        "lastModified": 1783006612,
+        "narHash": "sha256-zvIFqnsl8rVEXcTTajkxIlUyMYkFh7vBjjmXaKZuh7Q=",
+        "owner": "yaap",
         "repo": "vendor_lindroid",
-        "rev": "eadbb70f13209133d96a5355464388db8c6578de",
+        "rev": "748e59920f33083401336f624d62e66c6d0e3137",
         "type": "github"
       },
       "original": {
-        "owner": "Linux-on-droid",
-        "ref": "lindroid-22.1",
+        "owner": "yaap",
+        "ref": "sixteen",
         "repo": "vendor_lindroid",
         "type": "github"
       }

@@ -40,19 +40,19 @@
       flake = false;
     };
     lindroid-external-lxc = {
-      url = "github:Linux-on-droid/external_lxc/lindroid-21";
+      url = "github:yaap/external_lxc/sixteen";
       flake = false;
     };
     lindroid-libhybris = {
-      url = "github:Linux-on-droid/libhybris/lindroid-21";
+      url = "github:yaap/libhybris/sixteen";
       flake = false;
     };
     lindroid-drm-loopback = {
-      url = "github:Linux-on-droid/lindroid-drm-loopback/master";
+      url = "github:yaap/kernel_oneplus_sm8650/sixteen";
       flake = false;
     };
     lindroid-vendor = {
-      url = "github:Linux-on-droid/vendor_lindroid/lindroid-22.1";
+      url = "github:yaap/vendor_lindroid/sixteen";
       flake = false;
     };
     android-vendor-partner-gms = {
